@@ -119,6 +119,9 @@ Este curso oferece uma apresentação de uma das ferramentas mais poderosas em a
 - Produzir análises qualificadas, seja a partir de dados secundários ou estudos exploratórios
 
 ## Conteúdo do Curso:
+
+<img align='right' src="https://media.giphy.com/media/5ndklThG9vUUdTmgMn/giphy.gif" width="200">
+
 Serão **5** aulas, de 3h de duração cada (total de **15h**), organizadas da seguinte maneira: *1 hora* de aula, *30 minutos* de intervalo seguidos de mais *30 minutos* para dúvidas, e mais *1 hora* de aula. 
 
 - Aula 1: Introdução ao R
@@ -130,6 +133,8 @@ Serão **5** aulas, de 3h de duração cada (total de **15h**), organizadas da s
 
 <br />
 <br />
+
+
 
 [![ForTheBadge built-with-science](http://ForTheBadge.com/images/badges/built-with-science.svg)](https://GitHub.com/Naereen/)
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/)
@@ -151,6 +156,7 @@ Serão **5** aulas, de 3h de duração cada (total de **15h**), organizadas da s
 [linkedin3]: https://www.linkedin.com/in/matheus-ferreira-20417916/
 
 
-
 [![Generic badge](https://img.shields.io/badge/Updated-Yes-<GREEN>.svg)](https://shields.io/)
 [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/contributors/)
+
+
