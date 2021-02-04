@@ -71,8 +71,8 @@ Pesquisador do Projeto de Pesquisa Media Bias e ex-data analyst da Quaest Consul
 [*Lattes*](http://lattes.cnpq.br/1749611392497058])
 
 Doutorando em Ciência Política no Programa de Pós-Graduação da Universidade Federal de Minas Gerais (UFMG). <br />
-Mestre em Ciências Sociais pelo Programa de Pós-graduação em Ciências Sociais da Universidade Federal de Juis de Fora (UFJG). <br />
-Bacharel em Ciências Sociais pela Universidade Federal de Juis de Fora (UFJG). <br />
+Mestre em Ciências Sociais pelo Programa de Pós-graduação em Ciências Sociais da Universidade Federal de Juis de Fora (UFJF). <br />
+Bacharel em Ciências Sociais pela Universidade Federal de Juis de Fora (UFJF). <br />
 Pesquisador do Centro de Estudos do Comportamento Político (CECOMP), da UFMG. <br />
 Área de atuação: Comportamento Político e Opinião Pública, com foco em religião e comportamento eleitoral.
 
