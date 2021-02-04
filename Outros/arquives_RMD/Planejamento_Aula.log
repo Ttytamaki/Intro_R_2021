@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.1.31)  3 FEB 2021 14:55
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.1.31)  4 FEB 2021 16:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2026,16 +2026,25 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 
 [1
 
-] [2]
+]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 288.
+(hyperref)                be the same. Added a new anchor on input line 212.
+
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 241.
+
+[2]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 321.
 
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 297.
+(Font)              scaled to size 12.0pt on input line 330.
 [3]
 
-LaTeX Warning: Empty bibliography on input line 376.
+LaTeX Warning: Empty bibliography on input line 409.
 
 [4] (./Planejamento_Aula.aux)
 
@@ -2049,7 +2058,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Planejamento_Aula.out' has not changed.
-(rerunfilecheck)             Checksum: A0785A773CA91F3F3C8921FF322610CA;2990.
+(rerunfilecheck)             Checksum: 3D569DD8007710EFA2F70773A2AAE5A4;3888.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                Planejamento_Aula
@@ -2060,10 +2069,10 @@ Package logreq Info: Writing requests to 'Planejamento_Aula.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28088 strings out of 479196
- 520841 string characters out of 5872326
- 1495823 words of memory out of 5000000
- 47231 multiletter control sequences out of 15000+600000
+ 28096 strings out of 479196
+ 521035 string characters out of 5872326
+ 1497148 words of memory out of 5000000
+ 47239 multiletter control sequences out of 15000+600000
  411042 words of font info for 111 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  98i,11n,125p,750b,4102s stack positions out of 5000i,500n,10000p,200000b,80000s

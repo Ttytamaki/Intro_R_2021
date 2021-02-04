@@ -1,24 +1,24 @@
 {
     "id": "435FD4B4",
-    "path": "C:/Users/Virgilio/Desktop/aula_R/Mquinho_2020_Introd_R-master/arquives_RMD/Planejamento_Aula.rmd",
+    "path": "C:/Users/Virgilio/Desktop/Intro_R_2021/Outros/arquives_RMD/Planejamento_Aula.rmd",
     "project_path": "Planejamento_Aula.rmd",
     "type": "r_markdown",
-    "hash": "621931709",
+    "hash": "2411237227",
     "contents": "",
     "dirty": false,
     "created": 1612374345003.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
-        "cursorPosition": "12,13",
+        "cursorPosition": "5,66",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1612374894,
+    "lastKnownWriteTime": 1612468403,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1612374894650,
+    "last_content_update": 1612468403217,
     "read_only": false,
     "read_only_alternatives": []
 }
