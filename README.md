@@ -21,9 +21,9 @@
 
 
 
-**Dias:** *8 - 12 de Fevereiro, 2021*
-**Carga Horária:** *15 horas / 3h/aula*
-**Horário:** *18h - 21h*
+**Dias:** *8 - 12 de Fevereiro, 2021* <br />
+**Carga Horária:** *15 horas / 3h/aula* <br />
+**Horário:** *18h - 21h* <br />
 
 
 <!-- TABLE OF CONTENTS -->
