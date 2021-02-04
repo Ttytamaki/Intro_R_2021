@@ -46,8 +46,6 @@ Foco na área de Comportamento Político e especialista em Populismo. Tem experi
 <br />
 
 
-****
-
 <br />
 
 **Virgílio Mendes**([virgilioebm@gmail.com](mailto:virgilioebm@gmail.com))
@@ -64,6 +62,29 @@ Pesquisador do Projeto de Pesquisa Media Bias e ex-data analyst da Quaest Consul
 [<img align="left" alt="Virgilio Mendes | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin2]
 
 <br />
+
+
+<br />
+
+
+**Matheus Gomes Mendonça Ferreira**([ferreira.dcp@gmail.com](mailto:ferreira.dcp@gmail.com))
+[*Lattes*](http://lattes.cnpq.br/1749611392497058])
+
+Doutorando em Ciência Política no Programa de Pós-Graduação da Universidade Federal de Minas Gerais (UFMG). <br />
+Mestre em Ciências Sociais pelo Programa de Pós-graduação em Ciências Sociais da Universidade Federal de Juis de Fora (UFJG). <br />
+Bacharel em Ciências Sociais pela Universidade Federal de Juis de Fora (UFJG). <br />
+Pesquisador do Centro de Estudos do Comportamento Político (CECOMP), da UFMG. <br />
+Área de atuação: Comportamento Político e Opinião Pública, com foco em religião e comportamento eleitoral.
+
+#### Redes Sociais e Contato :mailbox_with_mail: :
+[<img align="left" alt="Matheus Ferreira | ResearchGate" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/researchgate.svg" />][researchgate3]
+[<img align="left" alt="https://github.com/mathpol" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website3]
+[<img align="left" alt="Matheus Ferreira | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter3]
+[<img align="left" alt="Matheus Ferreira | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin3]
+
+
+<br />
+
 
 ****
 
@@ -104,6 +125,12 @@ Serão **5** aulas, de 3h de duração cada (total de **15h**), organizadas da s
 [website2]: https://virgiliomendes.github.io
 [twitter2]: https://twitter.com/Mendes_txt
 [linkedin2]: https://www.linkedin.com/in/virgiliomendes/
+
+[researchgate3]: https://www.researchgate.net/profile/Matheus_Ferreira38
+[website3]: https://github.com/mathpol
+[twitter3]: https://twitter.com/matferreira19
+[linkedin3]: https://www.linkedin.com/in/matheus-ferreira-20417916/
+
 
 
 [![Generic badge](https://img.shields.io/badge/Updated-Yes-<GREEN>.svg)](https://shields.io/)
