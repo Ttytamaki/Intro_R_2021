@@ -25,9 +25,28 @@
 **Carga Horária:** *15 horas / 3h/aula*
 **Horário:** *18h - 21h*
 
-*****
 
-### Professores:
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Conteúdo</summary>
+  <ol>
+    <li>
+      <a href="#professores">Professores</a>
+    </li>
+    <li>
+      <a href="#objetivo-do-curso">Objetivo do Curso</a>
+    </li>
+    <li><a href="#conteúdo-do-curso">Conteúdo do Curso</a></li>
+  </ol>
+</details>
+
+<br />
+
+******
+
+<br />
+
+## Professores:
 
 **Eduardo Tamaki**([eduardo.rtamaki@gmail.com](mailto:eduardo.rtamaki@gmail.com))
 [*Lattes*](http://lattes.cnpq.br/5391631247832365)
@@ -91,7 +110,7 @@ Pesquisador do Centro de Estudos do Comportamento Político (CECOMP), da UFMG. <
 <br />
 
 
-### Objetivo do Curso:
+## Objetivo do Curso:
 Este curso oferece uma apresentação de uma das ferramentas mais poderosas em análise de dados, o R. O curso proposto é uma introdução que permitirá ao aluno ou aluna dominar os básicos para a manipulação e visualização de dados, ou se aventurar em um trabalho com modelos mais sofisticados. Não é necessária nenhuma familiaridade ou experiência prévia com R, partiremos do básico e cobriremos as principais funções e recursos que um profissional necessita para se iniciar na área.
 
 - Estar ambientado com o RStudio e ser capaz de buscar informações e resolver problemas.
@@ -99,7 +118,7 @@ Este curso oferece uma apresentação de uma das ferramentas mais poderosas em a
 - Melhorar skills síntese de informações e replicabilidade de pesquisas com rigor científico.
 - Produzir análises qualificadas, seja a partir de dados secundários ou estudos exploratórios
 
-### Conteúdo do Curso:
+## Conteúdo do Curso:
 Serão **5** aulas, de 3h de duração cada (total de **15h**), organizadas da seguinte maneira: *1 hora* de aula, *30 minutos* de intervalo seguidos de mais *30 minutos* para dúvidas, e mais *1 hora* de aula. 
 
 - Aula 1: Introdução ao R
