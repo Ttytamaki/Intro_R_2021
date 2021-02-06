@@ -1,6 +1,6 @@
 {
     "id": "D4CBF750",
-    "path": "C:/Users/Virgilio/Desktop/slides_aulas_r/slide_aula_intr_r/slide_aula_1.Rmd",
+    "path": "C:/Users/Virgilio/Desktop/Intro_R_2021/Aulas/slide_aula_intr_r/slide_aula_1.Rmd",
     "project_path": "slide_aula_1.Rmd",
     "type": "r_markdown",
     "hash": "364233340",
@@ -13,7 +13,7 @@
         "tempName": "Untitled1",
         "cursorPosition": "177,0",
         "scrollLine": "176",
-        "last_setup_crc32": "2561F04F25fd71c6"
+        "last_setup_crc32": ""
     },
     "folds": "",
     "lastKnownWriteTime": 1612648385,
