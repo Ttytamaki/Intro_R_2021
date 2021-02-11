@@ -104,7 +104,7 @@ ggplot(iris, aes(x = Sepal.Width, fill = Species)) +
 ## Histograma com os títulos com o parametro hjust
 ggplot(iris, aes(x = Sepal.Width)) +
   geom_histogram(bins = 10, col = "black") +
-  labs(title = "Histograma", subtitle = "Introdução ao R - Mquinho 2020",
+  labs(title = "Histograma", subtitle = "Introdução ao R - UFPA 2021",
        x = "Largura da Sepala", y = "Frequência", caption = "Virgilio M.") +
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5), 
@@ -124,7 +124,7 @@ ggplot(iris, aes(x = Sepal.Length, fill = Species)) +
   scale_x_continuous(limits = c(4, 9), breaks = c(4, 6, 8)) +
   theme_minimal() +
   labs(title = "Gráfico de Densidade", 
-       subtitle = "Introdução ao R - Mquinho 2020",
+       subtitle = "Introdução ao R - UFPA 2021",
        x = "Largura da Sepala") +
   theme(plot.title = element_text(hjust = .5), 
         plot.subtitle = element_text(hjust = .5))
@@ -144,7 +144,7 @@ ggplot(swiss, aes( x = Examination, y = Education)) +
   geom_line(size = .5, col = "blue", linetype = 2) +
   theme_minimal() +
   labs(title = "Gráfico de Linha", 
-       subtitle = "Introdução ao R - Mquinho 2020", 
+       subtitle = "Introdução ao R - UFPA 2021", 
        caption = "Virgilio M.") +
   theme(plot.title = element_text(hjust = .5), 
         plot.subtitle = element_text(hjust = .5))
