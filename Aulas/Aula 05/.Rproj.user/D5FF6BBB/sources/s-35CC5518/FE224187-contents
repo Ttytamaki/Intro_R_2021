@@ -1,0 +1,25 @@
+
+
+
+y = matrix(1:16, nrow = 4, ncol = 4, by = 2)
+y
+
+y = rbind(y, z)
+y
+
+z = 7:10
+
+y[,5] <- NA
+y[, 5] <- c(7:10)
+
+x <- 1:10
+
+x
+
+x = lapply(x, sum)
+x
+
+
+tapply(vector, index, function)
+
+matrix2 <- cbind(my_vector, matrix)
