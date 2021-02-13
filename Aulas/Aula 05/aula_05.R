@@ -55,20 +55,9 @@ bd1 %>% group_by(class, date) %>%
   ggplot(aes(x = date, y = foco, by = class)) + 
   theme_minimal() +
   geom_line(size = 2, aes(group = class, color = factor(class))) +
-  geom_point(size = 4, aes(color = factor(class))) +
+  #geom_point(size = 4, aes(color = factor(class))) +
   labs(title = "Número de Incêndio | Por mês", subtitle = "No Pará",
        y = 'Focos de incêndio', x ='Data', color = '') +
-  theme(axis.title.y = element_text(size = 15), axis.text.y = element_text( size = 15)) +
-  theme(axis.text.x = element_blank()) + theme(axis.ticks = element_blank()) + 
-  # tira a legenda 
-  theme(plot.title = element_text(size = 20),
-        plot.subtitle = element_text(size = 20)) +
-  theme(axis.text.x = element_text(size = 12, angle = 45)) + 
-  theme(axis.title.x = element_text(size = 15)) + 
-  theme(axis.ticks = element_blank()) + 
-  theme(legend.position = "bottom", 
-        legend.text = element_text(size = 15),
-        legend.title = element_text(size = 16, color = "black")) +
   scale_color_manual(values = paleta, name = "Situação") +
   theme(plot.title = element_text(hjust = .5),
         plot.subtitle = element_text(hjust = .5))

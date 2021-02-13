@@ -1,12 +1,22 @@
-## Aula 05 - 12/02/2021
+# ---
+#
+# Aula 05 
+# Introdução ao R - 2021
+#
+# ---
+#
+# Professores:
+# Eduardo Ryô Tamaki
+# e-mail: eduardo.rtamaki@gmail.com
+#
+# Virgílio Mendes
+# e-mail: virgilioebm@gmail.com
+#
+# Monitores:
+# Matheus Ferreira
+# e-mail: ferreira.dcp@gmail.com
+#
 
-## GGPLOT2
-
-## Limpando nosso Environment:
-rm(list = ls())
-
-## Instalando e Carregando o pacote do ggplot2:
-#install.packages("ggplot2") # quem já tem instalado não precisa rodar
 
 
 # Se os pacotes necessários não estiverem instalados, faça a instalação
@@ -17,42 +27,39 @@ if (! "gridExtra" %in% installed.packages()) install.packages("gridExtra")
 # carrega pacotes
 library(ggplot2)
 library(dplyr)
-library(tidyverse)
 library(readr)
 library(ggrepel)
 library(writexl)
 library(gridExtra)
 
+# limpar o environment
+rm(list = ls())
 
-## Banco de dados: 
-bd = read_csv2("data/banco_marcos.csv")
+# Lê arquivos com extensao .csv separado por ;
+bd = read.csv2("banco_marcos.csv")
 
+
+# Filtrar apenas PARA
+names(bd)
+
+unique(bd$uf)
 
 
 bd1 = bd %>% filter(uf == "PARA") %>% 
-  group_by(class, date) %>% 
-  count(focuses) %>% 
-  summarise(foco = sum(focuses)) %>% 
-  ungroup()
+  rename(date = `ï..date`)
 
 
-bd_final <- tapply(bd1$foco, list(bd1$date, bd1$class), sum) %>% as.data.frame()
-
-# inclui coluna data
-bd_final$date <- rownames(bd_final)
-
-# exportar em excel
-write_xlsx(bd_final, "tabela_marcos.xlsx")
-
+View(bd1)
 
 ## Paleta de cores
 paleta <- c( "#0D50D8", "#C70039", "#5DADE2", "#2ca25f", "#e34a33")
 
+### Salvar os dois gráficos separadamente
 
 
 # Grafico de serie historica (linha)
 bd1 %>% group_by(class, date) %>% 
-  ggplot(aes(x = date, y = foco, by = class)) + 
+  ggplot(aes(x = date, y = focuses, by = class)) + 
   theme_minimal() +
   geom_line(size = 2, aes(group = class, color = factor(class))) +
   geom_point(size = 4, aes(color = factor(class))) +
@@ -76,7 +83,7 @@ bd1 %>% group_by(class, date) %>%
 ggsave("aula05_linha_1.png", height = 8, width = 12, dpi = 300)
 
 # Grafico de barras
-ggplot(bd1, aes(x = date, y = foco, fill = class)) +
+ggplot(bd1, aes(x = date, y = focuses, fill = class)) +
   geom_col() +
   theme_minimal() +
   labs(title = "Número de Incêndio | Por mês",
@@ -95,11 +102,58 @@ ggsave("aula05_barras_1.png", height = 8, width = 12, dpi = 300)
 
 
 
-# falta criar G1 e G2
-
-grid.arrange(g1, g2)
 
 
 
-ggsave("aula05_plot_duplo.png", height = 8, width = 12, dpi = 300)
+### Para Salvar 2 gráficos na mesma imagem:
+
+# Grafico de barras
+g2 = bd1 %>% 
+  ggplot(aes(x = date, y = focuses, fill = class)) +
+  geom_col() +
+  theme_minimal() +
+  labs(x = "Data", y = "Num. de Incênd.") +
+  theme(plot.title = element_text(hjust = .5),
+        plot.subtitle = element_text(hjust = .5)) +
+  scale_fill_manual(values = paleta) +
+  theme(legend.position = "none") +
+  facet_wrap(~class) +
+  theme(axis.text.x = element_text(size = 10, angle = 45))
+  
+
+# Grafico de linha
+
+g1 = bd1 %>% group_by(class, date) %>% 
+  ggplot(aes(x = date, y = focuses, by = class)) +
+  geom_line(size = 2, aes(group = class, color = factor(class))) +
+  geom_point(size = 4, aes(color = factor(class))) + 
+  theme_minimal() +
+  labs(title = "Num. de Incêndios | Mês",
+       subtitle = "No Pará",
+       x = "", y = "Num. de Incênd.",
+       caption = "Fonte: Marcos") +
+  theme(plot.title = element_text(hjust = .5),
+        plot.subtitle = element_text(hjust = .5)) +
+  theme(axis.text.x = element_text(size = 10, angle = 45)) +
+  theme(legend.position = "bottom") +
+  scale_color_manual(values = paleta, 
+                     name = "Situação")
+
+
+teste = grid.arrange(g1, g2)
+
+
+
+ggsave("aula5_plot_duplo.png", teste, height = 8, width = 12, dpi = 300)
+
+
+
+
+
+
+
+
+
+
+
 
