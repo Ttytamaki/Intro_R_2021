@@ -36,7 +36,7 @@
     <li>
       <a href="#objetivo-do-curso">Objetivo do Curso</a>
     </li>
-    <li><a href="#conteúdo-do-curso">Conteúdo do Curso</a></li>
+    <li><a href="#aulas-e-links-para-vídeos">Aulas e Links para Vídeos</a></li>
   </ol>
 </details>
 
@@ -118,17 +118,24 @@ Este curso oferece uma apresentação de uma das ferramentas mais poderosas em a
 - Melhorar skills síntese de informações e replicabilidade de pesquisas com rigor científico.
 - Produzir análises qualificadas, seja a partir de dados secundários ou estudos exploratórios
 
-## Conteúdo do Curso:
+## Aulas e Links para Vídeos:
 
 <img align='right' src="https://media.giphy.com/media/5ndklThG9vUUdTmgMn/giphy.gif" width="200">
 
 Serão **5** aulas, de 3h de duração cada (total de **15h**), organizadas da seguinte maneira: *1 hora* de aula, *30 minutos* de intervalo seguidos de mais *30 minutos* para dúvidas, e mais *1 hora* de aula. 
 
-- Aula 1: Introdução ao R
-- Aula 2: Data Frames: Tratamento, Manipulação e Análise de Dados
-- Aula 3: Manipulação de dados com Dplyr
-- Aula 4: Visualização de dados com Ggplot2
-- Aula 5: Encerramento e Trabalho Prático
+<br />
+
+Bom, infelizmente, não foi possível gravar a primeira aula =(
+Com isso, teremos apenas as aulas 2, 3, 4 e 5 disponibilizadas;
+
+
+- Aula 1: Introdução ao R (x)
+- Aula 2: [Data Frames: Tratamento, Manipulação e Análise de Dados](https://tldv.io/app/videos/1612905258092-google-meet-vne-zoev-zbc.mp4) ()
+- Aula 3: [Manipulação de dados com Dplyr](https://tldv.io/app/videos/1612992054775-google-meet-vne-zoev-zbc.mp4)
+- Aula 4: [Visualização de dados com Ggplot2](https://tldv.io/app/videos/1613078683101-google-meet-vne-zoev-zbc.mp4)
+- Aula 5: Encerramento (Família Apply) e Trabalho Prático - [Parte 1](https://tldv.io/app/videos/1613165318999-google-meet-vne-zoev-zbc.mp4) [Parte 2](https://tldv.io/app/videos/1613168783743-google-meet-vne-zoev-zbc.mp4)
+
 
 
 <br />
