@@ -1,4 +1,9 @@
 ---
+
+% cabeçalho baseado no material disponibilizado pelo pesquisador @arturhgq 
+% para a monitoria da disciplina de inferência causal 2020/1 UFMG.
+ 
+ 
 title: \titulo{Introdução ao R - 2021}
 author:
   - \autor{Virgílio de Araújo Mendes}{virgilioebm@gmail.com}
