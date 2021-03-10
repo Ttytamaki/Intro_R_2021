@@ -130,7 +130,7 @@ Bom, infelizmente, não foi possível gravar a primeira aula =(
 Com isso, teremos apenas as aulas 2, 3, 4 e 5 disponibilizadas;
 
 
-- Aula 1: Introdução ao R :x:
+- Aula 1: [Introdução ao R](https://youtu.be/gmue8ZfVsNc) :heavy_check_mark:
 - Aula 2: [Data Frames: Tratamento, Manipulação e Análise de Dados](https://tldv.io/app/videos/1612905258092-google-meet-vne-zoev-zbc.mp4) :heavy_check_mark:
 - Aula 3: [Manipulação de dados com Dplyr](https://tldv.io/app/videos/1612992054775-google-meet-vne-zoev-zbc.mp4) :heavy_check_mark:
 - Aula 4: [Visualização de dados com Ggplot2](https://tldv.io/app/videos/1613078683101-google-meet-vne-zoev-zbc.mp4) :heavy_check_mark:
