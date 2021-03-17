@@ -72,7 +72,8 @@ Foco na área de Comportamento Político e especialista em Populismo. Tem experi
 
 Mestrando em Ciência Política na UFMG, na área de Comportamento Político, e Bacharel em Ciências Sociais pela Universidade Federal de Minas Gerais (UFMG). <br />
 Ex-diretor da Coordenadoria de Projetos da MEIOS JR. <br />
-Pesquisador do Projeto de Pesquisa Media Bias e ex-data analyst da Quaest Consultoria e Pesquisa com expertise em análise e processamento de surveys.  <br />
+Pesquisador pelo Projeto de Pesquisa Media Bias (UFMG) <br />
+Pesquisador pelo Centro de Estudos do Comportamento Político (UFMG) e ex-data analyst da Quaest Consultoria e Pesquisa com expertise em análise e processamento de surveys.  <br />
 
 #### Redes Sociais e Contato :mailbox_with_mail: :
 [<img align="left" alt="Virgilio Mendes | ResearchGate" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/researchgate.svg" />][researchgate2]
