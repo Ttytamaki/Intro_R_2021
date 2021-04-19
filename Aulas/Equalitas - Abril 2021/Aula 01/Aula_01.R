@@ -11,12 +11,9 @@
 # Virgílio Mendes
 # e-mail: virgilioebm@gmail.com
 #
-# Monitores:
-# Matheus Ferreira
-# e-mail: ferreira.dcp@gmail.com
 #
 # ---
-# 08/02/2021
+# 19/04/2021
 # ---
 #
 # Material de Apoio:
@@ -108,7 +105,7 @@ x / y
 x = c(6, 8, 10, 3) # comnado c() cria um vetor - função concatenar
 y = c(4, 6, 3, 5) 
 
-# operações com vetores devem ter vetores com o mesmo munero de elementos
+# operações com vetores devem ter vetores com o mesmo nunero de elementos
 x + y # operações com vetores
 x - y
 x * y
@@ -118,20 +115,73 @@ z <- x + y + 10
 # Vetores representam um conjunto de informação que é armazenado em uma ordem específica. Utilizamos
 # a função “c()”, que significa “concatenar”, para criar um vetor com multiplos valores, com virgulas os
 # separando.
-# Por exemplo, iremos criar aqui um vetor com a população mundial estimada, de acordo com levantamentos
-# da ONU, dos anos de 1950 a 2010:
 
-pop.mund <- c(2525779, 3026003, 3691173, 4449049, 5320817, 6127700,
-              6916183)
+# Por exemplo: Empresas Juniores em Belo Horizonte
+ejs <- c(25, 30, 18, 23, 15, 19, 27)
 
-pop.mund
+ejs
 
 
 # A função c() também pode ser usada para concatenar VETORES
-pop.first <- c(2525779, 3026003, 3691173)
-pop.second <- c(4449049, 5320817, 6127700)
-pop.all <- c(pop.first, pop.second, 6916183)
-pop.all
+ejs_first <- c(25, 30, 18)
+ejs_second <- c(23, 15, 19)
+ejs_all <- c(ejs_first, ejs_second, 27)
+ejs_all
+
+# Classe ---------------------------------------------------------------
+
+# comando para saber a classe do dado/vetor/conjunto
+class(x)
+# x é classe numeric = números que assumem casas decimais
+
+
+# Character ------------------------------------------------------------
+
+# dados do tipo character (texto)
+nome = "Virgilio"
+sobrenome = "Mendes"
+
+# chamando o objeto
+nome
+sobrenome
+# chamando a classe do objeto nome
+class(nome)
+
+
+# Manipulando Texto ----------------------------------------------------
+
+# funções básicas para manipulação de texto
+
+# paste mostra objeto no console
+paste(nome, sobrenome)
+
+p1 = "Eu"
+p2 = "gosto"
+p3 = "de"
+p4 = "café"
+
+paste(p1, p2, p3, p4)
+
+# usando paste e separador com ,
+paste(p1, p2, p3, p4, sep = ",")
+
+
+frase = paste(p1, p2, p3, p4) # criando objeto da frase a partir do paste
+tolower(frase) # todos os caracteres em minusculo
+toupper(frase) # todos os caracteres em maiusculo
+frase
+
+grep("não!", frase) # função de buscar padrões de texto
+grep("gosto", frase)
+grep("escola", frase) # busca padrões textuais  
+grep("café", frase) # busca padrões textuais
+
+
+gsub("gosto", "odeio", frase) # substituição de caracteres
+gsub("de", "DE", frase) # função de substituição de caracteres (substituição de "de" por "DE")
+
+# estas são estruturas unidimencionais, vetores, 
+# que conjuntos de dados de apenas uma dimensão
 
 # Matrizes -------------------------------------------------------------
 
@@ -152,7 +202,7 @@ A[2,4]
 
 # Data frames
 
-nome = c("Virgilio", "Eduardo", "Matheus")
+nome = c("Virgilio", "Eduardo", "Guilherme")
 idade = c(52, 24, 29)
 altura = c(1.71, 1.76, 1.78)
 
@@ -223,62 +273,6 @@ rm(list = ls(all=T))
 ?rm
 
 options(scipen = 999) # tira notação científica
-
-
-# Classe ---------------------------------------------------------------
-
-# comando para saber a classe do dado/vetor/conjunto
-class(x)
-# x é classe numeric = números que assumem casas decimais
-
-
-# Character ------------------------------------------------------------
-
-# dados do tipo character (texto)
-nome = "Virgilio"
-sobrenome = "Mendes"
-
-# chamando o objeto
-nome
-sobrenome
-# chamando a classe do objeto nome
-class(nome)
-
-
-# Manipulando Texto ----------------------------------------------------
-
-# funções básicas para manipulação de texto
-
-# paste mostra objeto no console
-paste(nome, sobrenome)
-
-p1 = "Eu"
-p2 = "gosto"
-p3 = "de"
-p4 = "café"
-
-paste(p1, p2, p3, p4)
-
-# usando paste e separador com ,
-paste(p1, p2, p3, p4, sep = ",")
-
-
-frase = paste(p1, p2, p3, p4) # criando objeto da frase a partir do paste
-tolower(frase) # todos os caracteres em minusculo
-toupper(frase) # todos os caracteres em maiusculo
-frase
-
-grep("não!", frase) # função de buscar padrões de texto
-grep("gosto", frase)
-grep("escola", frase) # busca padrões textuais  
-grep("café", frase) # busca padrões textuais
-
-
-gsub("gosto", "odeio", frase) # substituição de caracteres
-gsub("de", "DE", frase) # função de substituição de caracteres (substituição de "de" por "DE")
-
-# estas são estruturas unidimencionais, vetores, 
-# que conjuntos de dados de apenas uma dimensão
 
 
 # Fim ------------------------------------------------------------------
