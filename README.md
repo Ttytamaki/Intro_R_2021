@@ -113,10 +113,10 @@ Conforme as aulas estiverem disponibilizadas, completaremos com os links abaixo:
 
 
 - Aula 1: [Introdução ao R]() :heavy_check_mark:
-- Aula 2: [Data Frames: Tratamento, Manipulação e Análise de Dados](https://tldv.io/app/videos/1612905258092-google-meet-vne-zoev-zbc.mp4) :heavy_check_mark:
-- Aula 3: [Manipulação de dados com Dplyr](https://tldv.io/app/videos/1612992054775-google-meet-vne-zoev-zbc.mp4) :heavy_check_mark:
-- Aula 4: [Visualização de dados com Ggplot2](https://tldv.io/app/videos/1613078683101-google-meet-vne-zoev-zbc.mp4) :heavy_check_mark:
-- Aula 5: Encerramento (Família Apply) e Trabalho Prático - [Parte 1](https://tldv.io/app/videos/1613165318999-google-meet-vne-zoev-zbc.mp4) [Parte 2](https://tldv.io/app/videos/1613168783743-google-meet-vne-zoev-zbc.mp4) :heavy_check_mark:
+- Aula 2: [Data Frames: Tratamento, Manipulação e Análise de Dados]() :heavy_check_mark:
+- Aula 3: [Manipulação de dados com Dplyr]() :heavy_check_mark:
+- Aula 4: [Visualização de dados com Ggplot2]() :heavy_check_mark:
+- Aula 5: Encerramento (Família Apply) e Trabalho Prático - [Parte 1]() :heavy_check_mark:
 
 
 
