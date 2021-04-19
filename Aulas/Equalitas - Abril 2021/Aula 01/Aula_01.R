@@ -1,8 +1,8 @@
 # ---
 #
 # Aula 01 - Conhecendo o R
-# Introdução ao R - Oficina de Métodos 2021 Capes Procad Amazônia
-#
+# Introdução ao R - 2021
+# Equalitas Jr.
 # ---
 #
 # Professores:
