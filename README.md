@@ -112,11 +112,11 @@ Serão **5** aulas, de 3h de duração cada (total de **15h**), organizadas da s
 Conforme as aulas estiverem disponibilizadas, completaremos com os links abaixo:
 
 
-- Aula 1: [Introdução ao R]() :heavy_check_mark:
-- Aula 2: [Data Frames: Tratamento, Manipulação e Análise de Dados]() :heavy_check_mark:
-- Aula 3: [Manipulação de dados com Dplyr]() :heavy_check_mark:
-- Aula 4: [Visualização de dados com Ggplot2]() :heavy_check_mark:
-- Aula 5: Encerramento (Família Apply) e Trabalho Prático - [Parte 1]() :heavy_check_mark:
+- Aula 1: [Introdução ao R]() :x:
+- Aula 2: [Data Frames: Tratamento, Manipulação e Análise de Dados]() :x:
+- Aula 3: [Manipulação de dados com Dplyr]() :x:
+- Aula 4: [Visualização de dados com Ggplot2]() :x:
+- Aula 5: Encerramento (Família Apply) e Trabalho Prático - [Parte 1]() :x:
 
 
 
