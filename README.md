@@ -7,7 +7,7 @@
 
 
 <p align="center">
-  Repositório para o curso de Introdução ao R, ministrado para o Programa de Pós-Graduação da Universidade Federal do Pará.
+  Repositório para o curso de Introdução ao R, Versão 2021.
     <br />
     <a href="https://github.com/Ttytamaki/Intro_R_2021/tree/main/Guias%20de%20Instala%C3%A7%C3%A3o">Instalar</a>
     ·
@@ -21,9 +21,9 @@
 
 
 
-**Dias:** *8 - 12 de Fevereiro, 2021* <br />
+**Dias:** *19 - 23 de Abril, 2021* <br />
 **Carga Horária:** *15 horas / 3h/aula* <br />
-**Horário:** *18h - 21h* <br />
+**Horário:** *19h - 22h* <br />
 
 
 <!-- TABLE OF CONTENTS -->
@@ -54,7 +54,6 @@
 Mestrando em Ciência Política no Programa de Pós­Graduação da Universidade Federal de Minas Gerais, e Bacharel em Ciências Sociais pela UFMG. <br />
 Pesquisador pelo Centro de Estudos do Comportamento Político (CECOMP), da UFMG. Membro da equipe de Análise Textual do Team Populism (BYU). <br />
 Pesquisador pela Fundação Oswaldo Cruz (Fiocruz) e colaborador no projeto "Gênero e COVID-19". <br />
-Pesquisador pela Fundação João Pinheiro (FJP). <br />
 Foco na área de Comportamento Político e especialista em Populismo. Tem experiência com pesquisas envolvendo métodos quantitativos e qualitativos. <br />
 
 #### Redes Sociais e Contato :mailbox_with_mail: :
@@ -87,24 +86,6 @@ Pesquisador pelo Centro de Estudos do Comportamento Político (UFMG) e ex-data a
 
 <br />
 
-
-**Matheus Gomes Mendonça Ferreira**([ferreira.dcp@gmail.com](mailto:ferreira.dcp@gmail.com))
-[*Lattes*](http://lattes.cnpq.br/1749611392497058])
-
-Doutorando em Ciência Política no Programa de Pós-Graduação da Universidade Federal de Minas Gerais (UFMG). <br />
-Mestre em Ciências Sociais pelo Programa de Pós-graduação em Ciências Sociais da Universidade Federal de Juis de Fora (UFJF). <br />
-Bacharel em Ciências Sociais pela Universidade Federal de Juis de Fora (UFJF). <br />
-Pesquisador do Centro de Estudos do Comportamento Político (CECOMP), da UFMG. <br />
-Área de atuação: Comportamento Político e Opinião Pública, com foco em religião e comportamento eleitoral.
-
-#### Redes Sociais e Contato :mailbox_with_mail: :
-[<img align="left" alt="Matheus Ferreira | ResearchGate" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/researchgate.svg" />][researchgate3]
-[<img align="left" alt="https://github.com/mathpol" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website3]
-[<img align="left" alt="Matheus Ferreira | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter3]
-[<img align="left" alt="Matheus Ferreira | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin3]
-
-
-<br />
 
 
 ****
