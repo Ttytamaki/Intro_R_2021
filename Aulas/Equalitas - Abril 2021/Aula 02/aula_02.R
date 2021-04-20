@@ -1,7 +1,7 @@
 # ---
 #
 # Aula 02 - Data frames
-# Introdução ao R - Oficina de Métodos 2021 Capes Procad Amazônia
+# Introdução ao R - 
 #
 # ---
 #
@@ -11,12 +11,8 @@
 # Virgílio Mendes
 # e-mail: virgilioebm@gmail.com
 #
-# Monitores:
-# Matheus Ferreira
-# e-mail: ferreira.dcp@gmail.com
-#
 # ---
-# 09/02/2021
+# 20/04/2021
 # ---
 #
 # Material de Apoio:
@@ -106,32 +102,6 @@ banco$Alunos
 
 banco$Idade[seq(from = 1, to = 4, by = 2)]
 banco$Idade[1:3]
-
-# Matrizes -------------------------------------------------------------
-
-# Linhas e colunas - Estruturas de dados bidimensionais
-
-# objeto
-x = 5
-x
-# vetor
-vetor = c(5, 5, 6, 2, 6)
-vetor
-
-
-# Matrizes e bancos de dados
-A = matrix(data = 1:16, nrow = 4, ncol = 4)
-A # criando matrix 4 por 4 (numeros de 1 a 16)
-
-# Identificando posição dos elementos
-# Linhas - representação [1,]
-# Colunas - representação [,1]
-# nomedamatrix[linhas,colunas]
-
-A[2,4]
-A[4,2]
-A[,3]
-A[2,]
 
 # Importando Bancos ----------------------------------------------------
 
