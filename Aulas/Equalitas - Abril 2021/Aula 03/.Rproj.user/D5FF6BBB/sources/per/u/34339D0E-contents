@@ -1,0 +1,8 @@
+
+
+
+# Como lidar com NA's
+
+
+maiores_sepal = arrange(maiores_sepal, desc(Sepal.Length))
+maiores_sepal = select(iris, c(Species, Sepal.Length))
