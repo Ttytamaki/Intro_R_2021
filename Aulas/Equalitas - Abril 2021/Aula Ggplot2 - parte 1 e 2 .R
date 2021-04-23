@@ -104,6 +104,22 @@ ggplot(data = iris2, aes(x = sep_comp)) +
         plot.subtitle = element_text(hjust = .5)) # centraliza o subtitulo
 
 
+# grafico de barra
+# gráficos de colunas: o geom_bar() e geom_col()
+# geom_bar() dispensa o argumento y
+# 
+ggplot(data = iris2, aes(x = sep_comp, fill = tipo)) +
+  geom_bar(bins = 10, position = "dodge") + 
+  labs(title = "Histograma \n Aula 04", # labs especifica nomes dos eixos e titulos
+       subtitle = "Teste", 
+       y = "Frequência", 
+       x = "Comprimento da Sépala", 
+       caption = "Intr. ao R - 2021") + # legenda
+  theme_minimal() + # personalização do tema
+  theme(plot.title = element_text(hjust = .5), # centraliza o titulo
+        plot.subtitle = element_text(hjust = .5)) # centraliza o subtitulo
+
+
 # Gráfico de densidade
 # Para variáveis numéricas contínuas
 
@@ -191,7 +207,7 @@ g1 = iris2 %>%
   labs(title = "Boxplot", # labs especifica nomes dos eixos e titulos
        subtitle = "Aula 04", 
        y = "Comprimento da Pétala", 
-       x = "Estpécie", 
+       x = "Espécie", 
        caption = "Intr. ao R - 2021") + # legenda
   theme_minimal() + # personalização do tema
   theme(plot.title = element_text(hjust = .5), # centraliza o titulo
