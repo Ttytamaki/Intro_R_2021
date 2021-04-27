@@ -11,142 +11,144 @@
 # Virgílio Mendes
 # e-mail: virgilioebm@gmail.com
 #
+# 26/04/2021
 #
-# ---
-# 19/04/2021
-# ---
 
+
+# Operações
 
 # soma
 5 + 2
 # subtração
-41 - 6
-# divisão
-5 / 2
+6 - 1
 # multiplicação
-6 * 3
-# resto
+9 * 4
+# divisão
+6 / 3
+# resto da divisão 
+6 %% 3
 5 %% 2
 
-# sinal de atribuição
-x <- 1
-t = 14
 
-# soma com atribuição
-y <- 5 + 2
-# subtração com atribuição
-z <- 41 - 6
+# Sinais de atribuição
 
-# = é atribuição !!!! Não é igualdade
-## == é igualdade
-1 == 2
+x <- 5
+y <- 100 - 98
 
-t == 14
+z = 7
 
-# O R é key sensitive
-Z
+# Atribuição pode ser feita de 2 formas:
+# com o sinal de <-
+# com o sinal de =
 
-# Textos
-k = "Meu nome é Virgílio"
-# Tomem cuidado com o tipo de informação que está sendo trabalhada
-k/2
+# Então = (sinal de atribuição) é DIFERENTE de 
+# IGUALDADE (==)
+x == y
 
+# R é key sensitive
+X
+# x MAUISCULO é DIFERENTE do x MINUSCULO
 
-# Vetores
-vetor = c(1, 2, 3, 4, 5, 6)
+# atribuir informações textuais
+ 
+texto = " "
 
-# indexação
-teste = c(k, t, x, y, z)
-
-# função c() para concatenar
-
-# dia não existe no meu environment
-teste = c(k, t, x, y, z, dia)
-
-# chama o primeiro elemento
-teste[1]
-
-# tira a classe
-class(teste)
-
-
-# igualdade para objetos e vetores
-is.numeric(vetor)
-is.character(k)
-
-
-# limpa todo o enviroment
-# rm()   função para remover
-# list   declara como lista
-# ls()   lista todos os objetos do environment
-rm(list = ls())
-
-# Help
-?rm
-# ou um F1 em cima da função desejada
-
-# Manipulação de texto
 nome = "Eduardo"
+
 sobrenome = "Tamaki"
 
+# Operações com objetos
+# Observação: tem que ser NUMÉRICO!
+x * y
+5 * 2
+
+# Executar
+# Ctrl + Enter
+# Alt + Enter
+
+# Vetores
+
+# É um conjunto de objetos
+
+# Função concatenar
+objeto = c(1, 2, 3, 4, 5)
+objeto
+objeto1 = c(1, 2, 3, "Eu", 4)
+objeto1
+
+# c() cria um vetor
+
+# criando um vetor a partir dos objetos
+tropeiro = c(x, y, z)
+
+tropeiro1 = c(x, "y, z")
+tropeiro1
+
+
+# Manipulação de texto
+
+# ""
 nome
 sobrenome
 
-# concatenar vetores depois de converter em 
-# caracteres
-paste(nome, sobrenome)
+# classe 
+class(nome)
+class(objeto)
 
-# Construindo frases
+# retornar em texto
+nome_completo = paste(nome, sobrenome)
+nome_completo
 
-x1 = "Eu"
-x2 = "gosto"
-x3 = "de"
-x4 = "café!"
+#  Funções de manipulação de texto
+# transforma em maiusculo
+toupper(nome_completo)
+# transforma em minusculo
+tolower(nome_completo)
+# busca padrões textuais
+grep("Eduardo", nome_completo)
+# Retorna posição do elemento que tem o padrão textual
+nome1 = c("Virgilio", "Eduardo", "Natalia")
+grep("i", nome1)
+# Retorna as posições dos elementos que contem o padrão textual "i"
+# no meu VETOR nome1
 
-# atribuindo caracteres em um objeto
-obj1 = paste(x1, x2, x3, x4)
-obj1
+# substitui o caracter
+gsub("a", "EEEEE", nome_completo)
 
-# transforma tudo em maiuscula
-toupper(obj1)
-# transforma tudo em minusculo
-tolower(obj1)
 
-# busca padroes textuais
-grep("gosto", obj1)
-grep("odeio", obj1)
-
-# substituição de padrões
-gsub("gosto", "odeio", obj1)
-gsub("de", "DE", obj1)
-gsub(" ", ",", obj1)
-
-# Matrizes
+# Matriz
 
 # Linhas e Colunas
-A = matrix(data = 1:16, nrow = 4, ncol = 4)
+
+A = matrix(1:16, nrow = 4, ncol = 4)
 
 A
 
-
-#  [linha , coluna]
-# A[linha , coluna ]
+# [linha, coluna]
+# acessa elemento
 A[1, 1]
+# acessar linha
+A[2, ]
+# acessar coluna
+A[ , 3]
 
-# Atribuindo o valor 2
-# ao elemento da matrix A, linha 2, coluna 3
-A[2, 3] = 2
-# pedindo para o R retornar o valor desse elemento
-A[2, 3]
-A
+# Representação [linha, coluna]
 
 
-# Nomeando as linhas e colunas das matrizes
-dimnames(A) = list(row_names = c("1", "2", "3", "4"),
-                   col_names = c("1", "2", "3", "4"))
-A
 
-?matrix
+
+# Limpa o environment
+
+# rm() : função para remover
+# list : transforma em lista
+# ls() : lista tudo o que está no environment
+
+# Help
+?rm()
+
+
+rm(list = ls())
+
 
 
 

@@ -13,7 +13,7 @@
 #
 #
 # ---
-# 19/04/2021
+# 26/04/2021
 # ---
 #
 # Material de Apoio:
@@ -28,8 +28,8 @@
 # 
 #         - Operações Básicas
 #         - Objetos (classe e tipos de dados)
-#         - Importando Data Sets
-#         - Estatísticas e investigações do banco de dados
+#         - Matriz
+#         - Data frames
 
 ## PREAMBULO -----------------------------------------------------------
 
