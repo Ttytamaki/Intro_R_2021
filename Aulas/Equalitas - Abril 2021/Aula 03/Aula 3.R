@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 # ---
 #
 # Aula 03 - Dplyr
