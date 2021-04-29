@@ -1,0 +1,70 @@
+# Grafico com pesos para ggplot
+library(ggplot2)
+library(forcats)
+library(tidyverse)
+datasets::iris3
+
+bd = iris
+bd$categoria = bd$Species
+
+
+# Passo 1: cria tabela de proporção da variavel de interesse com os pesos
+# aplicados
+# Modelo com peso
+t1 = as.data.frame(prop.table(wtd.table(bd$Species, weights = bd$peso)) * 100)
+# Modelo sem peso
+t1 = as.data.frame(prop.table(table(bd$Species)) * 100)
+# renomeia a coluna com o nome da "Categoria" que a tabela representa
+t1$Var2 = "Variavel 1"
+# Passo 2: aplica o processo para as demais variaveis que serão incluídas no grafico
+# Modelo com peso
+t2 = as.data.frame(prop.table(wtd.table(bd$categoria, weights = bd$peso)) * 100)
+# Modelo sem peso
+t2 = as.data.frame(prop.table(table(bd$categoria)) * 100)
+t2$Var2 = "Variavel 2"
+
+
+# Passo 3: unifica as duas tabelas convertidas em data frame
+t = rbind(t1,t2)
+# Passo 4: omite NA do data frame
+t <- na.omit(t)
+t$Freq <-round(t$Freq, 0)
+t$up <- t$Freq + me
+t$low <- t$Freq - me
+t$low[t$low < 0] = 0
+t$Var2 = factor(t$Var2, levels = c("Variavel 1", "Variavel 2"))
+
+ggplot(t, aes(x = fct_rev(Var1),
+              y = Freq,
+              fill = Var1,
+              label = paste(format(Freq, decimal.mark = ","),'%', sep = ''))) +
+  geom_col(width = 0.4, alpha = 0.85)+
+  geom_errorbar(aes(ymin = low, ymax = up), 
+                size = .2, width = .1, 
+                position = position_dodge(.9)) +
+  # settings genéricos dos gráficos +
+  coord_flip() +
+  ylim(0, max(t$Freq) + 30) +
+  theme_bw(base_size = 16) +
+  labs(y = '', x = '', color = '', 
+       title = "Meu Título",
+       subtitle = "Meu Subtítulo", caption = "Minha legenda") +
+  # Tamanho do título
+  theme(plot.title = element_text(size=18)) +
+  theme(plot.subtitle = element_text(size=12)) +
+  #scale_x_date(date_labels = "%b/%y", date_breaks = "4 months") +
+  scale_fill_manual(values = c(blues9)) +
+  theme(strip.text = element_text(size = 10, angle = 0)) +
+  theme(axis.title.y = element_text(size = 18), 
+        axis.text.y = element_text(vjust = 0.5, size = 12)) +
+  #tira o grid
+  #theme(panel.grid.minor = element_blank(), panel.grid.major = element_blank()) +
+  # tira a legenda
+  theme(legend.position = "none") +
+  geom_text(size = 1.5, hjust = -.4) +
+  facet_wrap(~Var2, nrow = 1) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(size = 3.8)) +
+  #Tira os labels e ticks
+  theme(axis.text.x = element_blank()) + 
+  theme(axis.ticks = element_blank())

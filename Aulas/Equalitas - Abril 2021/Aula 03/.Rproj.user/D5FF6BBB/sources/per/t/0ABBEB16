@@ -3,22 +3,22 @@
     "path": "C:/Users/Virgilio/Desktop/Intro_R_2021/Aulas/Equalitas - Abril 2021/Aula 03/Aula 3.R",
     "project_path": "Aula 3.R",
     "type": "r_source",
-    "hash": "700014020",
+    "hash": "3054535996",
     "contents": "",
     "dirty": false,
     "created": 1619044199320.0,
     "source_on_save": false,
     "relative_order": 2,
     "properties": {
-        "cursorPosition": "424,0",
-        "scrollLine": "413"
+        "cursorPosition": "279,0",
+        "scrollLine": "265"
     },
     "folds": "",
-    "lastKnownWriteTime": 1619048484,
+    "lastKnownWriteTime": 1619119199,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1619048484993,
+    "last_content_update": 1619119199,
     "read_only": false,
     "read_only_alternatives": []
 }
