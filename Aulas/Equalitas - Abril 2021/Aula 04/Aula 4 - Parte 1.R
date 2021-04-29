@@ -89,8 +89,8 @@ ggplot(iris, aes(x = Sepal.Width, y = Sepal.Length)) +
   geom_point(size = 3, shape = 25)
 
 ### Bubblechart: Tamanho de acordo com 1 variável:
-ggplot(iris, aes(x = Sepal.Width, y = Sepal.Length, size = Sepal.Length)) +
-  geom_point()
+# ggplot(iris, aes(x = Sepal.Width, y = Sepal.Length, size = Sepal.Length)) +
+#  geom_point()
 
 
 ## Cor e Preenchimento:
@@ -183,8 +183,8 @@ ggplot(iris, aes(x = Species, y = Sepal.Width)) +
   geom_boxplot()
 
 ### Orientação muda de acordo com o EIXO:
-ggplot(iris, aes(x = Sepal.Width, y = Species )) +
-  geom_boxplot()
+# ggplot(iris, aes(x = Sepal.Width, y = Species )) +
+#  geom_boxplot()
 
 
 ## Cor e Preenchimento:
@@ -205,13 +205,13 @@ ggplot(iris, aes(x = Species, y = Sepal.Width, col = Species)) +
 ## Colorir os Outliers de outra cor:
 ### outlier.colour = x : x - String
 ### outlier.shape = y : y - Numero
-ggplot(iris, aes(x = Species, y = Sepal.Width, fill = Species)) +
-  geom_boxplot(outlier.colour = "red", outlier.shape = 19)
+# ggplot(iris, aes(x = Species, y = Sepal.Width, fill = Species)) +
+#   geom_boxplot(outlier.colour = "red", outlier.shape = 19)
 
 ### Não mostrar NA:
 #### outlier.shape = NA
-ggplot(iris, aes(x = Species, y = Sepal.Width, fill = Species)) +
-  geom_boxplot(outlier.shape = NA)
+# ggplot(iris, aes(x = Species, y = Sepal.Width, fill = Species)) +
+#   geom_boxplot(outlier.shape = NA)
 
 
 
@@ -219,18 +219,17 @@ ggplot(iris, aes(x = Species, y = Sepal.Width, fill = Species)) +
 ### geom_jitter:
 #### Vai "plotar" os pontos dos dados
 ## geom_jitter(width = x)
-ggplot(iris, aes(x = Species, y = Sepal.Width, fill = Species)) +
-  geom_boxplot(outlier.shape = NA) + geom_jitter(width = 0.25)
+# ggplot(iris, aes(x = Species, y = Sepal.Width, fill = Species)) +
+#   geom_boxplot(outlier.shape = NA) + geom_jitter(width = 0.25)
 
-ggplot(iris, aes(x = Species, y = Sepal.Width, fill = Species)) +
-  geom_boxplot(outlier.shape = NA) + geom_jitter(width = 0.25, col = "violet")
+# ggplot(iris, aes(x = Species, y = Sepal.Width, fill = Species)) +
+#   geom_boxplot(outlier.shape = NA) + geom_jitter(width = 0.25, col = "violet")
 
 
 
 ## Finalizando o Boxplot:
 ### 2 camadas: Labels e Salvar
 ggplot(iris, aes(x = Species, y = Sepal.Width)) +
-  geom_boxplot(outlier.colour = "red") + 
   labs(title = "Boxplot",
        subtitle = "Aula Ggplot2",
        x = "Tipos de Planta", 
