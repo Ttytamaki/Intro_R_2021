@@ -48,9 +48,8 @@ library(ggplot2)
 library(gridExtra)
 
 ?iris
-?swiss
+?airquality
 
-iris = iris
 ## -----------------------------------------------------------------------------
 
 # Histograma
