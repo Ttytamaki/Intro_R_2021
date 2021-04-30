@@ -245,25 +245,29 @@ library(writexl) # exporta em excel
 
 
 # comando para tirar tabelas de frequencia e proporção
-table(iris$Species)
+table(db_n$uf)
+table(db_n$class)
 
 # Cruzamentos de variaveis
-t1 = table(iris$Sepal.Width, iris$Species) # tabela de numeros absolutos
+t1 = table(db_n$uf, db_n$class) # tabela de numeros absolutos
 
 # para calcular percentual
+# valor de 0 a 1
+prop.table(t1)
+# Para transformar em % é só multiplicar por 100
 prop.table(t1)*100 
 # ou 
-prop.table(table(iris$Sepal.Width, iris$Species))*100
+prop.table(table(db_n$uf, db_n$class))*100
 
 # para calcular 100% fechando na linha, 
 # usamos o parâmetro margin = 1
 t2 = prop.table(t1, margin = 1)*100
-
+t2 
 # para limitar em 2 casas decimais depois da virgula usamos
 # a função round(): primeiro termo é a tabela ou a informação que deve ser
 # arredondada e o segundo termo a quantidade de casas decimais depois da virgula
 t3 = round(prop.table(t1, margin = 1)*100, 2) # o numero 2 é a quant. de casas dec.
-
+t3
 # por defaul t3 é formato "table"
 # para exportar temos que converter em dataframe
 class(t3)
@@ -275,9 +279,9 @@ class(t3)
 # Salvando a tabela em Excel
 write_xlsx(t3 , "tabela_1.xlsx")
 # Salvando a tabela em .CSV com separador ","
-write_csv(t3 , "tabela_2.csv")
+write.csv(t3 , "tabela_2.csv")
 # Salvando a tabela em .CSV com separador ";"
-write_csv2(t3 , "tabela_3.csv")
+write.csv2(t3 , "tabela_3.csv")
 
 # Gráficos ---------------------------------------------------------------------
 
@@ -317,6 +321,7 @@ View(db_final)
 
 ## Paleta de cores
 # https://www.color-hex.com/color-palettes/
+# https://htmlcolorcodes.com/
 paleta <- c( "#0D50D8", "#C70039", "#5DADE2", "#2ca25f", "#e34a33")
 
 ## -----------------------------------------------------------------------------
