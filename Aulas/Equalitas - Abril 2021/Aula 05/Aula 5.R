@@ -153,6 +153,7 @@ db_dplyr
 #### arrange()
 #### filter()
 #### select()
+#### rename(
 
 #### 2.2.1) Variável Data:
 ## Reorganizar a Variável Data para ficar de maneira CRESCENTE:
@@ -167,7 +168,8 @@ db_dplyr <- db_dplyr %>%
 db_dplyr$desm_cons <- db_n %>% 
   filter(class == "Desmatamento Consolidado") %>% 
   arrange(data) %>%
-  select(focuses)
+  select(focuses) %>%
+  rename(desm_cons = focuses)
 
 #### 2.2.3) Variável Desmatamento Recente:
 ## Filtrar o Banco db_n pela classe "Desmatamento Recente" E
@@ -177,7 +179,8 @@ db_dplyr$desm_cons <- db_n %>%
 db_dplyr$desm_rec <- db_n %>%
   filter(class == "Desmatamento Recente") %>%
   arrange(data) %>%
-  select(focuses)
+  select(focuses) %>%
+  rename(desm_rec = focuses)
 
 #### 2.2.4) Variável Floresta:
 ## Filtrar o Banco db_n pela classe "Floresta" E
@@ -187,7 +190,8 @@ db_dplyr$desm_rec <- db_n %>%
 db_dplyr$flores <- db_n %>%
   filter(class == "Floresta") %>%
   arrange(data) %>%
-  select(focuses)
+  select(focuses) %>%
+  rename(flores = focuses)
 
 #### 2.2.4) Variável Outros:
 ## Filtrar o Banco db_n pela classe "Outros" E
@@ -197,7 +201,8 @@ db_dplyr$flores <- db_n %>%
 db_dplyr$outros <- db_n %>%
   filter(class == "Outros") %>%
   arrange(data) %>%
-  select(focuses)
+  select(focuses) %>%
+  rename(outros = focuses)
 
 
 db_dplyr
