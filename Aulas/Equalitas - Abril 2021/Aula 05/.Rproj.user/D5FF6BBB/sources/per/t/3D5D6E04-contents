@@ -1,0 +1,193 @@
+# ---
+#
+# Aula 05 - Encerramento
+# Equalitas - Introdução ao R 2021
+#
+# ---
+#
+# Professores:
+# Eduardo Ryô Tamaki
+# e-mail: eduardo.rtamaki@gmail.com
+#
+# Virgílio Mendes
+# e-mail: virgilioebm@gmail.com
+
+# ---
+# 30/04/2020
+# ---
+#
+# Material de Apoio:
+# Ggplot Website: https://ggplot2.tidyverse.org/index.html
+# Dplyr Cheat Sheet: https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf
+#
+
+## PREAMBLE --------------------------------------------------------------------
+
+# limpa environment:
+rm(list = ls())
+
+## PARTE 2 ---------------------------------------------------------------------
+
+# Tabelas ----------------------------------------------------------------------
+
+db <- read.csv(file.choose())
+
+## Vamos FILTRAR o banco de dados, pegando apenas a UF do Para
+## Aproveitaremos para RENOMEAR a variável data, 
+# para um nome mais amigável:
+db2 <- db %>%
+  filter(uf == "para") %>%
+  rename(data = ï..date)
+
+# fuções
+# table()
+# prop.table()
+
+# Passo 1:
+
+# comando para tirar tabela de freq.
+table(db$uf)
+table(db$class)
+
+# tabela de freq. cruzada
+t1 = table(db$uf, db$class)
+
+# criando uma tabela de proporção
+prop.table(table(db$uf, db$class))
+
+# outra forma é usando a tabela atribuida
+prop.table(t1)
+
+# Se quisermos transformar em % basta * por 100
+t2 = prop.table(t1)*100
+t2
+
+
+# Para fechar o 100% na linha
+t3 = prop.table(t1, margin = 1)*100
+t3
+
+# Limitar em duas casas decimais
+# Usa a função: round()
+t4 = round(t3, 2)
+t4
+
+
+# Estrutura para tabela quando se tem 
+# BANCO DE DADOS COM PESOS:
+#prop.table(table(db$uf, db$class, weights = bd$peso))
+
+# Exportar tabela
+write.csv(t4, "tabela1.csv")
+
+
+# outro jeito:
+t4 = as.data.frame(t4)
+
+# Exportar tabela
+write.csv(t4, "tabela2.csv")
+
+# Gráficos ---------------------------------------------------------------------
+
+library(ggplot2)
+library(gridExtra)
+
+# Antes de criar as visualizações vamos processar os dados:
+db2 = db %>% filter(uf == "para") %>% 
+  rename(date = `ï..date`,
+         classe = class)
+
+
+## Paleta de cores
+# https://www.color-hex.com/color-palettes/
+# https://htmlcolorcodes.com/
+paleta <- c( "#0D50D8", "#C70039", "#5DADE2", "#2ca25f", "#e34a33")
+
+
+# Grafico de linha
+
+# Passo 1:
+ggplot(db2, aes(x = data, y = focuses, group = class)) +
+  geom_line()
+
+# Passo 2:
+ggplot(db2, aes(x = data, y = focuses, group = class)) +
+  geom_line(size = 2, aes(color = factor(class))) + # dar cor as categorias
+  theme_minimal() +
+  labs(title = " Numero de incêndio | Por mês",
+       subtitle = "No Pará",
+       x = "Data",
+       y = " Focus de incêndio",
+       caption = "Intro. R - 2021") +
+  theme(plot.title = element_text(hjust = 0.5),
+        plot.subtitle = element_text(hjust = 0.5),
+        legend.position = "bottom") +
+  # camada para paleta de cores
+  scale_color_manual(values = paleta,
+                     name = "Situação")
+
+
+
+# Graficos de barras
+
+# geometria do geom_col
+ggplot(db2, aes(x = data, y = focuses, fill = class)) +
+  geom_col() +
+  theme_minimal() +
+  labs(title = " Numero de incêndio | Por mês",
+       subtitle = "No Pará",
+       x = "Data",
+       y = " Focus de incêndio",
+       caption = "Intro. R - 2021") +
+  theme(plot.title = element_text(hjust = 0.5),
+        plot.subtitle = element_text(hjust = 0.5),
+        legend.position = "none") +
+  theme(axis.text.x = element_text(angle = 45, vjust = .5)) +
+  scale_fill_manual(values = paleta,
+                    name = "Situação") +
+  facet_wrap(~class)
+
+
+# Juntando graficos
+
+# Grafico de linha
+g1 = ggplot(db2, aes(x = data, y = focuses, group = class)) +
+  geom_line(size = 2, aes(color = factor(class))) + # dar cor as categorias
+  theme_minimal() +
+  labs(title = " Numero de incêndio | Por mês",
+       subtitle = "No Pará",
+       x = "Data",
+       y = " Focus de incêndio",
+       caption = "Intro. R - 2021") +
+  theme(plot.title = element_text(hjust = 0.5),
+        plot.subtitle = element_text(hjust = 0.5),
+        legend.position = "bottom") +
+  # camada para paleta de cores
+  scale_color_manual(values = paleta,
+                     name = "Situação")
+
+
+
+# Graficos de barras
+g2 = ggplot(db2, aes(x = data, y = focuses, fill = class)) +
+  geom_col() +
+  theme_minimal() +
+  labs(title = " Numero de incêndio | Por mês",
+       subtitle = "No Pará",
+       x = "Data",
+       y = " Focus de incêndio",
+       caption = "Intro. R - 2021") +
+  theme(plot.title = element_text(hjust = 0.5),
+        plot.subtitle = element_text(hjust = 0.5),
+        legend.position = "none") +
+  theme(axis.text.x = element_text(angle = 45, vjust = .5)) +
+  scale_fill_manual(values = paleta,
+                    name = "Situação") +
+  facet_wrap(~class)
+
+# Para salvar
+library(gridExtra)
+g_final = grid.arrange(g1, g2)
+
+ggsave("aula5_final.png", g_final, height = 8, width = 10, dpi = 300)
+
