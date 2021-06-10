@@ -120,6 +120,9 @@ Conforme as aulas estiverem disponibilizadas, completaremos com os links abaixo:
 
 
 
+
+Todos os scripts e materiais formulados pelos autores são de propriedade intelectual dos mesmos e não devem ser usados sem consentimento prévio.
+
 <br />
 <br />
 
