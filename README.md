@@ -68,6 +68,7 @@ Foco na área de Comportamento Político e especialista em Populismo. Tem experi
 <br />
 
 **Matheus Gomes Mendonça Ferreira**([ferreira.dcp@gmail.com](mailto:ferreira.dcp@gmail.com))
+
 Doutorando em Ciência Política no Programa de Pós-Graduação da Universidade Federal de Minas Gerais (UFMG). Mestre em Ciências Sociais pelo Programa de Pós-graduação em Ciências Sociais da Universidade Federal de Juis de Fora (UFJF). Bacharel em Ciências Sociais pela Universidade Federal de Juis de Fora (UFJF). Pesquisador do Centro de Estudos do Comportamento Político (CECOMP), da UFMG. Área de atuação: Comportamento Político e Opinião Pública, com foco em religião e comportamento eleitoral.
 
 
